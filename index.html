@@ -4,46 +4,205 @@
   <meta charset="UTF-8">
   <title>vvsboards.com</title>
   <link rel="stylesheet" href="./main.css">
-<link rel='stylesheet' href='https://unpkg.com/lenis@1.3.3/dist/lenis.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://unpkg.com/lenis@1.3.3/dist/lenis.css'>
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="debug-grid-toggle" id="debugToggle">
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-  <div class="debug-square"></div>
-</div>
-
-<div class="container">
-  <div class="header">
-    <div class="header-content">
+  <header class="header">
+    <div>
+      <p>vvsboards</p>
+    </div>
+    <nav class="header-content">
       <div>
-        <p>MadeModern</p>
+        <a href="/snowboards">SNOWBOARDS</a>
       </div>
       <div>
-        <span>SNOWBOARDS</span>
+        <a href="/snowboards">[BINDINGS]</a>
       </div>
       <div>
-        <span>[ACCESSORIES]</span>
+        <a href="/snowboards">BOOTS</a>
+      </div>
+      <div>
+        <a href="/snowboards">[ACCESSORIES]</a>
       </div>
       <div>
         <a href="mailto:md@vvsboards.com" class="email-link">md@vvsboards.com</a>
         <span> — 12.25</span>
       </div>
+      <div class="vvs-svg">
+        <img src="../vvsboards.svg" class="vvsboardstext">
+      </div>
+    </nav>
+    <div class="burger-menu" onclick="toggleBurgerMenu(this);">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+<section id="intro" class="bg-section">
+  <figure class="video-container">
+    <video rel="preload" autoplay="" loop="" muted="" playsinline="" src="./images/yesimborrowingthisbw.mp4"></video>
+  </figure>
+  <div class="content">
+    <div class="vvs-svg">
+      <img src="../vvsboards.svg" class="vvsboardstext" />
     </div>
   </div>
+</section>
 
-  <div class="vvs-svg">
-    <img src="../vvsboards.svg" class="vvsboardstext" />
+<section style="background-color: #000;">
+  <div class="slider-container">
+  	<div class="now-showing">PRE-ORDER NOW</div>
+  	<div class="accordion-slider">
+  		<div class="slide" style="background-image: url('./images/skirack.webp')">
+  			<div class="slide-content">
+  				<div class="slide-number">01</div>
+  				<div class="car-brand">Suction Ski Rack</div>
+  				<div class="car-name">Snowboard/Ski Rack</div>
+  				<div class="car-subtitle">All-weather All-altitude</div>
+  				<div class="car-specs">
+            <div class="spec-row">
+              <span class="spec-label">Max Speed:</span>
+              <span class="spec-value">80 mph</span>
+            </div>
+  					<div class="spec-row">
+  						<span class="spec-label">Fits:</span>
+  						<span class="spec-value">4 Skis/2 Snowboards</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Power:</span>
+  						<span class="spec-value">210lb Suction Force</span>
+  					</div>
+  				</div>
+  				<div class="performance-badges">
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>1 year warranty</span>
+  					</div>
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Price: $400 +tax</span>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="add-button"></div>
+  		</div>
+
+  		<div class="slide" style="background-image: url('./showcase6.png');">
+  			<div class="slide-content">
+  				<div class="slide-number">02</div>
+  				<div class="car-brand">Freestyle Snowboard</div>
+  				<div class="car-name">Reborn VVS</div>
+  				<div class="car-subtitle">Naturally Smooth Carving</div>
+  				<div class="car-specs">
+  					<div class="spec-row">
+  						<span class="spec-label">Sizes:</span>
+  						<span class="spec-value">139cm - 162cm</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Stance Length:</span>
+  						<span class="spec-value">38cm - 65cm (Based on board)</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Stiffness:</span>
+  						<span class="spec-value">Moderate</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Camber:</span>
+  						<span class="spec-value">Moderate</span>
+  					</div>
+  				</div>
+  				<div class="performance-badges">
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Board Only</span>
+  					</div>
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Price: $780 +tax</span>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="add-button"></div>
+  		</div>
+
+  		<div class="slide" style="background-image: url('./images/binding.jpg')">
+  			<div class="slide-content">
+  				<div class="slide-number">03</div>
+  				<div class="car-brand">MK1 Bindings</div>
+  				<div class="car-name">Bind VVS</div>
+  				<div class="car-subtitle">Easy Step-in</div>
+  				<div class="car-specs">
+  					<div class="spec-row">
+  						<span class="spec-label">Use case:</span>
+  						<span class="spec-value">Ski Resorts</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Sizes:</span>
+  						<span class="spec-value">Small/Medium/Large</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Type:</span>
+  						<span class="spec-value">Quick/Step-in</span>
+  					</div>
+  				</div>
+  				<div class="performance-badges">
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Binding Only</span>
+  					</div>
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Price: $380 +tax</span>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="add-button"></div>
+  		</div>
+
+  		<div class="slide" style="background-image: url('')">
+  			<div class="slide-content">
+  				<div class="slide-number">04</div>
+  				<div class="car-brand">MK1 Boots</div>
+  				<div class="car-name">Shape VVS</div>
+  				<div class="car-subtitle">Crafted with elegance</div>
+  				<div class="car-specs">
+  					<div class="spec-row">
+  						<span class="spec-label">Stiffness:</span>
+  						<span class="spec-value">4/5</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">Sizes:</span>
+  						<span class="spec-value">US 7 - US 13</span>
+  					</div>
+  					<div class="spec-row">
+  						<span class="spec-label">System:</span>
+  						<span class="spec-value">Tripple BOA</span>
+  					</div>
+  				</div>
+  				<div class="performance-badges">
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Boot Only</span>
+  					</div>
+  					<div class="badge">
+  						<div class="badge-icon"></div>
+  						<span>Price: $350 +tax</span>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="add-button"></div>
+  		</div>
+  	</div>
+
+  	<button class="navigation-arrows nav-prev">‹</button>
+  	<button class="navigation-arrows nav-next">›</button>
   </div>
+</section>
 
+<div class="container">
   <div class="portfolio-grid" id="portfolioGrid">
     <div class="debug-overlay" id="debugOverlay">
       <div class="debug-column" data-col="1"></div>
@@ -141,15 +300,80 @@
       <div class="image-title">Complete Vision</div>
     </div>
   </div>
-
-  <div class="footer">
-    <div>Press D for Debug Grid — Press H for Controls</div>
-  </div>
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js'></script>
-<script src='https://unpkg.com/lenis@1.3.3/dist/lenis.min.js'></script><script type="module" src="./script.js"></script>
-
+<script src='https://unpkg.com/lenis@1.3.3/dist/lenis.min.js'></script>
+<script type="module" src="./script.js"></script>
+  <script>
+    //Toggle Burger Menu
+    document.addEventListener("DOMContentLoaded", function() {
+        const headerHeight = document.querySelector('body > header').offsetHeight;
+        document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+    });
+    function toggleBurgerMenu(burger) {
+        burger.classList.toggle('active');
+        document.querySelector('body > header > nav').classList.toggle('active');
+        document.querySelector('body').classList.toggle('freeze');
+        document.querySelectorAll('.js-collapsible').forEach(el => el.classList.toggle('active')); 
+    }
+  </script>
+  <script>
+    //Accordian Slider
+    class AccordionSlider {
+    	constructor() {
+    		this.slides = document.querySelectorAll(".slide");
+    		this.prevBtn = document.querySelector(".nav-prev");
+    		this.nextBtn = document.querySelector(".nav-next");
+    		this.currentIndex = -1;
+      
+    		this.init();
+    	}
+    
+    	init() {
+    		this.slides.forEach((slide, index) => {
+    			slide.addEventListener("click", () => this.setActiveSlide(index));
+    		});
+      
+    		this.prevBtn.addEventListener("click", () => this.previousSlide());
+    		this.nextBtn.addEventListener("click", () => this.nextSlide());
+      
+    		document.addEventListener("keydown", (e) => {
+    			if (e.key === "ArrowLeft") this.previousSlide();
+    			if (e.key === "ArrowRight") this.nextSlide();
+    		});
+    	}
+    
+    	setActiveSlide(index) {
+    		if (this.currentIndex === index) {
+    			this.slides.forEach((slide) => slide.classList.remove("active"));
+    			this.currentIndex = -1;
+    		} else {
+    			this.slides.forEach((slide) => slide.classList.remove("active"));
+    			this.slides[index].classList.add("active");
+    			this.currentIndex = index;
+    		}
+    	}
+    
+    	nextSlide() {
+    		const nextIndex =
+    			this.currentIndex === -1 ? 0 : (this.currentIndex + 1) % this.slides.length;
+    		this.setActiveSlide(nextIndex);
+    	}
+    
+    	previousSlide() {
+    		const prevIndex =
+    			this.currentIndex === -1
+    				? this.slides.length - 1
+    				: (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+    		this.setActiveSlide(prevIndex);
+    	}
+    }
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    	new AccordionSlider();
+    });
+  </script>
 </body>
 </html>
